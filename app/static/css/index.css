@@ -5,7 +5,16 @@
 .container-fluid {
 display: flex;
 }
-.col-9 {
-overflow-y: none;
+.News {
+overflow-y: hidden;
 height: 90vh; /* NEW */
+}
+
+.center{
+  list-style-type: none;
+}
+
+*img{
+  width: 120px;
+  height: 120px;
 }
