@@ -6,6 +6,6 @@
 display: flex;
 }
 .col-9 {
-overflow-y: auto;
+overflow-y: none;
 height: 90vh; /* NEW */
 }
