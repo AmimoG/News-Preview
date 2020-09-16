@@ -5,13 +5,12 @@
 <body>
   <br>
   <br>
-  <h1 text-align="center" class="text-uppercase">{{cat}} NEWS </h3>
+  <h3 text-align="center" class="text-uppercase">{{cat}} NEWS </h3>
     <div class="container">
       <div class="card-columns">
         {% for category in category %}
-
-        <div class="card">
-          <img class="card" src="{{category.image}}" alt="Card image cap" size="100px180">
+        <div class="col-lg-9">
+          <img class="card" src="{{category.image}}" width="400px" height="300px" alt="Card image cap" class="img-responsive">
           <div class="card-body">
             <h5 class="card-title">{{category.author}}</h5>
             <p class="card-text">{{category.description}}</p>
@@ -23,8 +22,22 @@
             <small class="text-muted">Publish date:{{category.time}}</small>
           </div>
         </div>
+
+        <!-- <div class="col-lg-6 mb-4 col-xs-12 col-sm-12 col-md-4">
+          <img class="card" src="{{category.image}}" width= 500px height=400px alt="Card image cap" class="img-responsive">
+          <div class="card-body">
+            <h5 class="card-title">{{category.author}}</h5>
+            <p class="card-text">{{category.description}}</p>
+            <a href="{{category.url}}">
+              <p class="card-text">Click here for more details!</p>
+            </a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Publish date:{{category.time}}</small>
+          </div>
+        </div> -->
         {% endfor %}
       </div>
     </div>
     {% endblock %}
-  </body>
+</body>
